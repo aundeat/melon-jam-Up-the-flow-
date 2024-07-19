@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuManager : MonoBehaviour
+public class SceneManager : MonoBehaviour
 {
-    public void SendToVillage(string _scenename)
+    public void LoadScene(string _scenename)
     {
-        SceneManager.LoadScene(_scenename);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(_scenename);
     }
     public void Exit()
     {
